@@ -1,0 +1,3 @@
+<component name="helloworld-component" version="1.0.0">
+    <depends-on name="tools"/>
+</component>
