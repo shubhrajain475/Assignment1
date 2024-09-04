@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="demo">
+    <tutorial.Example exampleId="TestOne" exampleName="Test One" exampleDate="2024-08-30" examplePrice="100.00" exampleQuantity="10" description="Test one description."/>
+    <tutorial.Example exampleId="TestTwo" exampleName="Test Two" exampleDate="2024-08-30" examplePrice="200.00" exampleQuantity="20" description="Test two description."/>
+    <tutorial.Example exampleId="TestThree" exampleName="Test Three" exampleDate="2024-08-30" examplePrice="300.00" exampleQuantity="30" description="Test three description."/>
+    <tutorial.Example exampleId="TestFour" exampleName="Test Four" exampleDate="2024-08-30" examplePrice="400.00" exampleQuantity="40" description="Test four description."/>
+    <tutorial.Example exampleId="TestFive" exampleName="Test Five" exampleDate="2024-08-30" examplePrice="500.00" exampleQuantity="50" description="Test five description."/>
+</entity-facade-xml>

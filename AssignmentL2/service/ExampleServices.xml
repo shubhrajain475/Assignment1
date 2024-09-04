@@ -1,0 +1,43 @@
+<services>
+    <service verb="create" noun="Example" auto-transaction="true" location="component://helloworld-component/service/ExampleServices.xml">
+        <in-parameters>
+            <parameter name="exampleName" type="String"/>
+            <parameter name="exampleDescription" type="String"/>
+            <parameter name="exampleDate" type="Date"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="exampleId" type="String"/>
+        </out-parameters>
+        <actions>
+            <entity-create entity-name="Example" map="context" result-map="newValue"/>
+            <field-to-result name="exampleId"/>
+        </actions>
+    </service>
+
+    <service verb="update" noun="Example" auto-transaction="true" location="component://helloworld-component/service/ExampleServices.xml">
+        <in-parameters>
+            <parameter name="exampleId" type="String" required="true"/>
+            <parameter name="exampleName" type="String"/>
+            <parameter name="exampleDescription" type="String"/>
+            <parameter name="exampleDate" type="Date"/>
+        </in-parameters>
+        <actions>
+            <entity-update entity-name="Example" map="context"/>
+        </actions>
+    </service>
+
+    <service verb="find" noun="Example" auto-transaction="true" location="component://helloworld-component/service/ExampleServices.xml">
+        <in-parameters>
+            <parameter name="exampleId" type="String" required="true"/>
+        </in-parameters>
+        <actions>
+            <entity-find entity-name="Example" map="context" result-to="result"/>
+        </actions>
+    </service>
+
+    <service verb="list" noun="Examples" auto-transaction="true" location="component://helloworld-component/service/ExampleServices.xml">
+        <actions>
+            <entity-find entity-name="Example" list="true" result-to="result"/>
+        </actions>
+    </service>
+</services>

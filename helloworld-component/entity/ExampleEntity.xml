@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<entity name="Example" package="org.moqui.example" description="Example Entity">
-    <field name="exampleId" type="id" is-primary-key="true"/>
-    <field name="exampleName" type="text"/>
-    <field name="exampleDate" type="date"/>
-    <field name="examplePrice" type="currency-amount"/>
-    <field name="exampleQuantity" type="numeric"/>
-</entity>
